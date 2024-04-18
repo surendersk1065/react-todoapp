@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import { MdDelete } from "react-icons/md";
 
-function Work({ workitems, setWorkitems, name, setName, date, currWeek, currmonth }) {
+function Work({ workitems, setWorkitems, name, setName, date, currWeek, currmonth, }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()

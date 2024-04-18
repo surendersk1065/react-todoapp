@@ -16,18 +16,18 @@ function Sidebar({items, impitems, workitems, peritems,hitems, search, setSearch
     <>
         <div className='sidebar text-light py-3'>
             <div className='px-2'>
-                <div className='d-flex justify-content-between mb-2'>
+                <div className='d-flex justify-content-between mb-2 flex-wrap'>
                     <img src='img-1.jpg' style={{width:'40px' , borderRadius:'100%'}} className='shadow'/>
                     <button className='signinbtn' data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
                 </div>
-                    <div className='mb-5'>
+                    <div className=''>
                         <p className='text-uppercase pt-2 fw-bold fs-md-5 m-0'>{username ?? 'Guest User'}</p>
                         <p className=''>{mail}</p>
                     </div>
                 <form onSubmit={(e) => (e.preventDefault())}>
                 <input 
                     placeholder='Search'
-                    className=' p-md-2 form-control shadow search'
+                    className=' p-md-2 form-control shadow-lg search'
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
