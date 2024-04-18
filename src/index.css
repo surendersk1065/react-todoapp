@@ -1,0 +1,110 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+ background-color: #f3f2f1;
+}
+
+
+.sidebar{
+  width:40%;
+  background-color: #765ee6;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  
+}
+.signinbtn{
+  width:70px;
+  border-radius: 16px;
+  border: none;
+  font-weight: bold;
+  color:#765ee6;
+}
+.signinbtn:hover{
+  background: transparent;
+  color:white
+}
+.modal-content{
+  background-color: #765ee6;
+}
+.modal-body input{
+  background-color: aliceblue;
+  
+}
+@media all and (max-width:970px) {
+  .sidebar{
+    width:45%;
+  }
+  
+  
+}
+
+.link{
+  padding:2px 6px;
+  transition: 0.9s; 
+}
+
+.home{
+  margin-bottom:8px;
+}
+.pers{
+  margin-bottom:2px;
+}
+.work{
+  margin-bottom: 2px;
+}
+.imp{
+  margin-bottom: 2px;
+}
+.taskimg img{
+  width:300px;
+}
+.taskimg{
+  width: 60%;
+  height: 100vh;
+  padding-top:10px;
+}
+@media all and (max-width:900px){
+  .taskimg{
+    width: 55%;
+  }
+  .taskimg img{
+    width: 180px;
+  }
+  
+}
+.taskbtn{
+  background-color:#765ee6 ;
+  color:white;
+}
+
+.delbtn{
+  background:white;
+
+}
+.taskli li{
+  background-color: #eee;
+  padding:10px 2px;
+}
+.taskli {
+  width:500px;
+}
+@media all and (max-width:938px){
+  .taskli{
+    width:180px;
+  }
+}
+.taskli li:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.taskli input[type="checkbox"]{
+  cursor: pointer;
+}
+.taskimg{
+  overflow-y:auto;
+}
+.sidebar{
+  overflow-y: auto;
+}
